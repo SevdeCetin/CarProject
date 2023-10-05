@@ -1,0 +1,14 @@
+﻿@model LoginDTO
+
+<div class="container">
+    <span>@ViewBag.Msj </span>
+    <form asp-controller="AuthToken" asp-action="Login" method="post">
+        <label>Kullanıcı Adı</label>
+        <input class="form-control" type="text" asp-for="UserName" /><br />
+        <label>Şifre</label>
+        <input type="password" class="form-control" asp-for="Password" /><br />
+
+        <button class="btn btn-success" type="submit">Giriş Yap</button>
+    </form>
+
+</div>
